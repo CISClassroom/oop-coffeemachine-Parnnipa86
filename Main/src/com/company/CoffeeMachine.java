@@ -1,12 +1,11 @@
-import Americano.Americano;
-import Capuccino.Capuccino;
-import Espresso.Espresso;
-import Latte.Latte;
-import Mocho.Mocha;
+package com.company;
+
+
 
 import java.util.Scanner;
 
 public class CoffeeMachine {
+
     int coffee = 10;
     int water = 10;
     int milk = 10;
@@ -37,6 +36,7 @@ public class CoffeeMachine {
                 System.out.println("Sorry can't make it.");
         }
     }
+
     public Americano MakeAmericano() {
         //check recipe = americano offee 1 , water 2
         if (coffee > 1 && water > 2) {
@@ -75,6 +75,7 @@ public class CoffeeMachine {
                 System.out.println("Sorry can't make it.");
         }
     }
+
     public Latte MakeLatte() {
         //check recipe = latte offee 1 , milk 2
         if (coffee > 1 && milk > 2) {
@@ -113,6 +114,7 @@ public class CoffeeMachine {
                 System.out.println("Sorry can't make it.");
         }
     }
+
     public Espresso MakeEspresso() {
         //check recipe = americano offee 1 , water 2
         if (coffee > 2) {
@@ -150,6 +152,7 @@ public class CoffeeMachine {
                 System.out.println("Sorry can't make it.");
         }
     }
+
     public Capuccino MakeCapuccino() {
         //check recipe = capuccino offee 1 , milk 1
         if (coffee > 1 && water > 1) {
@@ -188,6 +191,7 @@ public class CoffeeMachine {
                 System.out.println("Sorry can't make it.");
         }
     }
+
     public Mocha MakeMocha() {
         if (coffee > 1 && water > 1) {
             coffee -= 1;
@@ -198,4 +202,5 @@ public class CoffeeMachine {
         } else
             return null;
     }
+
 }

@@ -1,4 +1,4 @@
-package Latte;
+package com.company;
 
 public class Latte {
 }
